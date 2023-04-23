@@ -53,4 +53,4 @@ def predict():
     return render_template('index.html', tables=[output_data.to_html(classes='data')], titles=output_data.columns.values)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
